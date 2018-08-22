@@ -1,5 +1,5 @@
 /*
- * Description: 
+ * Description:
  *     History: yang@haipo.me, 2017/03/16, create
  */
 
@@ -28,7 +28,7 @@ typedef struct order_t {
     mpd_t           *freeze;
     mpd_t           *deal_stock;
     mpd_t           *deal_money;
-    mpd_t           *deal_fee;
+    uint32_t        *deal_fee;
 } order_t;
 
 typedef struct market_t {
@@ -64,4 +64,3 @@ skiplist_t *market_get_order_list(market_t *m, uint32_t user_id);
 sds market_status(sds reply);
 
 # endif
-
